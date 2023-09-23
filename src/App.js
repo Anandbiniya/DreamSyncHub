@@ -7,6 +7,7 @@ import Info from "./components/Info"
 import Ourteam from "./components/Ourteam"
 import Support from "./components/Support"
 import Footer from "./components/Footer"
+import Core from './components/Core';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
   <Hero/>
   <Info/>
   <Card/>
+  <Core/>
   <Ourteam/>
   <Support/>
   <Footer/>
