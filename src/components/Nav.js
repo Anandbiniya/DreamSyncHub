@@ -11,21 +11,21 @@ function BasicExample() {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="#home">DreamSync</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav flex-grow-0 d-flex justify-content-end">
           <Nav className=" d-flex justify-content-end m-0 ">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+            <Nav.Link href="#link">Events</Nav.Link>
+            <NavDropdown title="More" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                Another action
+                Connection
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">About us</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Join us
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
