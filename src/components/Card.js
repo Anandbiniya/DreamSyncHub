@@ -1,197 +1,174 @@
 import React from 'react';
 import './card.css';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
-import { Image, Stack, Heading, Text, Button } from '@chakra-ui/react';
+import { Image, Stack, Heading, Text, Button, Divider, ButtonGroup} from '@chakra-ui/react';
 function Card1() {
   return (
 
 <>
-<Card
-  w='50%'
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-  
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
+<div className='d-flex justify-content-center'>
 
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
+<div className='row m-5 justify-content-evenly'>
 
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
+<Card maxW='xs' className='m-4'>
+  <CardBody>
+    <Image
+      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>Living room Sofa</Heading>
+      <Text>
+        This sofa is perfect for modern tropical spaces, baroque inspired
+        spaces, earthy toned spaces and for people who love a chic design with a
+        sprinkle of vintage design.
       </Text>
-    </CardBody>
-
-    <CardFooter>
+    </Stack>
+  </CardBody>
+  <CardFooter>
+   
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Buy now
       </Button>
-    </CardFooter>
-  </Stack>
+      
+    
+  </CardFooter>
 </Card>
-<Card
-  w='50%'
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-  
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
-
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
-
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
+<Card maxW='xs' className='m-4'>
+  <CardBody>
+    <Image
+      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>Living room Sofa</Heading>
+      <Text>
+        This sofa is perfect for modern tropical spaces, baroque inspired
+        spaces, earthy toned spaces and for people who love a chic design with a
+        sprinkle of vintage design.
       </Text>
-    </CardBody>
-
-    <CardFooter>
+    </Stack>
+  </CardBody>
+  <CardFooter>
+   
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Buy now
       </Button>
-    </CardFooter>
-  </Stack>
+      
+    
+  </CardFooter>
 </Card>
-<Card
-  w='50%'
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-  
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
-
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
-
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
+<Card maxW='xs' className='m-4'>
+  <CardBody>
+    <Image
+      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>Living room Sofa</Heading>
+      <Text>
+        This sofa is perfect for modern tropical spaces, baroque inspired
+        spaces, earthy toned spaces and for people who love a chic design with a
+        sprinkle of vintage design.
       </Text>
-    </CardBody>
-
-    <CardFooter>
+    </Stack>
+  </CardBody>
+  <CardFooter>
+   
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Buy now
       </Button>
-    </CardFooter>
-  </Stack>
+      
+    
+  </CardFooter>
 </Card>
-<Card
-  w='50%'
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-  
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
-
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
-
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
+</div>
+</div>
+<div className='d-flex justify-content-center'>
+<div className='row m-4 justify-content-evenly'>
+<Card maxW='xs' className='m-4'>
+  <CardBody>
+    <Image
+      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>Living room Sofa</Heading>
+      <Text>
+        This sofa is perfect for modern tropical spaces, baroque inspired
+        spaces, earthy toned spaces and for people who love a chic design with a
+        sprinkle of vintage design.
       </Text>
-    </CardBody>
-
-    <CardFooter>
+    </Stack>
+  </CardBody>
+  <CardFooter>
+   
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Buy now
       </Button>
-    </CardFooter>
-  </Stack>
+      
+    
+  </CardFooter>
 </Card>
-<Card
-  w='50%'
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-  
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
 
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
-
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
+<Card maxW='xs' className='m-4'>
+  <CardBody>
+    <Image
+      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>Living room Sofa</Heading>
+      <Text>
+        This sofa is perfect for modern tropical spaces, baroque inspired
+        spaces, earthy toned spaces and for people who love a chic design with a
+        sprinkle of vintage design.
       </Text>
-    </CardBody>
-
-    <CardFooter>
+    </Stack>
+  </CardBody>
+  <CardFooter>
+   
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Buy now
       </Button>
-    </CardFooter>
-  </Stack>
+      
+    
+  </CardFooter>
 </Card>
-<Card
-  w='50%'
-  direction={{ base: 'column', sm: 'row' }}
-  overflow='hidden'
-  variant='outline'
->
-  <Image
-  
-    objectFit='cover'
-    maxW={{ base: '100%', sm: '200px' }}
-    src='https://images.unsplash.com/photo-1667489022797-ab608913feeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60'
-    alt='Caffe Latte'
-  />
-
-  <Stack>
-    <CardBody>
-      <Heading size='md'>The perfect latte</Heading>
-
-      <Text py='2'>
-        Caffè latte is a coffee beverage of Italian origin made with espresso
-        and steamed milk.
+<Card maxW='xs' className='m-4'>
+  <CardBody>
+    <Image
+      src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
+      alt='Green double couch with wooden legs'
+      borderRadius='lg'
+    />
+    <Stack mt='6' spacing='3'>
+      <Heading size='md'>Living room Sofa</Heading>
+      <Text>
+        This sofa is perfect for modern tropical spaces, baroque inspired
+        spaces, earthy toned spaces and for people who love a chic design with a
+        sprinkle of vintage design.
       </Text>
-    </CardBody>
-
-    <CardFooter>
+    </Stack>
+  </CardBody>
+  <CardFooter>
+   
       <Button variant='solid' colorScheme='blue'>
-        Buy Latte
+        Buy now
       </Button>
-    </CardFooter>
-  </Stack>
+      
+    
+  </CardFooter>
 </Card>
+</div>
+
+</div>
+
 </>
   );
 }

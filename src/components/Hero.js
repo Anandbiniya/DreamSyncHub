@@ -5,9 +5,9 @@ import Image2 from "../assets/photo2.png";
 import Image1 from "../assets/photo1.png";
 function IndividualIntervalsExample() {
   return (
-    <div className='caro'>
+   
 
-    <Carousel className='w-75'>
+    <Carousel >
       <Carousel.Item interval={1000}>
       <img
         className="d-block w-100"
@@ -44,7 +44,7 @@ function IndividualIntervalsExample() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    </div>
+
   );
 }
 

@@ -1,0 +1,14 @@
+.card1{
+    display: flex;
+    width: 25vw;
+
+}
+.cirularimage{
+height: 120px;
+width: 120px;
+}
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
