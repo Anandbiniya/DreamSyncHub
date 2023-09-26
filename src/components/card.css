@@ -1,21 +1,20 @@
-/* CardCarousel.css */
+/* CardCarousel.css
 
-/* Styles for the card slideshow */
 .card-slideshow {
     display: flex;
     overflow: hidden;
-    animation: card-carousel 15s linear infinite; /* Adjust animation duration as needed */
+    animation: card-carousel 15s linear infinite; 
   }
   
   .card-slide {
     display: flex;
-    width: 300%; /* Three cards in each slide */
+    width: 300%; 
   }
   
   .card {
     flex: 1;
-    margin-right: 20px; /* Add horizontal spacing between cards */
-    background-color: #f0f0f0;
+    margin-right: 20px;  */
+    /* background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -32,7 +31,6 @@
     background-color: #e0e0e0;
   }
   
-  /* Customize the card title and body */
   .card-content {
     display: flex;
     flex-direction: column;
@@ -64,10 +62,9 @@
   
   .button:hover {
     background-color: #0056b3;
-  }
+  } */
   
-  /* Apply the animation to the card slideshow */
-  @keyframes card-carousel {
+  /* @keyframes card-carousel {
     0%, 100% {
       transform: translateX(0);
     }
@@ -96,25 +93,24 @@
   background-color: #e0e0e0;
 }
 
-/* Styles for the profile image */
 .profile-image {
-  margin-top: -50px; /* Adjust as needed to center the image */
-}
+  margin-top: -50px;
+} */
 
-.profile-img {
-  width: 100px; /* Set the width of the profile picture */
-  height: 100px; /* Set the height of the profile picture */
-  border-radius: 50%; /* Make it a circular image */
-  border: 2px solid #007bff; /* Add a border with a custom color */
-  transition: transform 0.3s ease; /* Add a subtle hover animation */
+/* .profile-img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  transition: transform 0.3s ease; 
 }
 
 .profile-img:hover {
   transform: scale(1.1);
-}
+} */
 
 /* Styles for the profile information */
-.profile-info {
+/* .profile-info {
   text-align: center;
   padding: 20px;
 }
@@ -129,10 +125,10 @@
   font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
-}
+} */
 
 /* Customize the "Know More" button */
-.button {
+/* .button {
   padding: 8px 16px;
   background-color: #007bff;
   color: #fff;
@@ -146,4 +142,9 @@
 .button:hover {
   background-color: #0056b3;
 }
-  
+   */
+
+
+
+
+   

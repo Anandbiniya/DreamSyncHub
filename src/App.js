@@ -8,6 +8,7 @@ import Ourteam from "./components/Ourteam"
 import Support from "./components/Support"
 import Footer from "./components/Footer"
 import Core from './components/Core';
+import { ChakraProvider } from '@chakra-ui/react'
 
 function App() {
   return (
@@ -15,7 +16,11 @@ function App() {
   <Nav/>
   <Hero/>
   <Info/>
+  <ChakraProvider>
+
+
   <Card/>
+  </ChakraProvider>
   <Core/>
   <Ourteam/>
   <Support/>
