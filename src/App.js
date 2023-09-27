@@ -15,13 +15,13 @@ function App() {
    <>
   <Nav/>
   <Hero/>
-  <Info/>
   <ChakraProvider>
 
 
   <Card/>
   </ChakraProvider>
-  <Core/>
+  <Info/>
+  
   <Ourteam/>
   <Support/>
   <Footer/>
