@@ -3,6 +3,8 @@ import './hero.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Image2 from "../assets/photo2.png";
 import Image1 from "../assets/photo1.png";
+import { Heading } from '@chakra-ui/react'
+
 function IndividualIntervalsExample() {
   return (
    
@@ -15,8 +17,8 @@ function IndividualIntervalsExample() {
         alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Heading as='h1' size='4xl' noOfLines={1}>DreamSync</Heading>
+
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
