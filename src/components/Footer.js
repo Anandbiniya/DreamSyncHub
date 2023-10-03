@@ -1,87 +1,138 @@
 import "./Footer.css"
+import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faSquareInstagram,faTwitter,faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons'
+
+
+
+
 
 import React from 'react'
+
 
 function Footer() {
   return (
    <>
-      <div cLassName="footer">
-        <div className="sb__footer section_padding"> 
-        <div className= "sb__footer-links">
-          <div className="sb__footer-links-div">
-            
-            <h4>For Business</h4>
-            <a href="/resource">
-              <p>Employer</p>
-            </a> 
-            <a href=" healthplan">
-              <p>Health Plan</p>
-            </a>
-            <a href="/individual">
-              <p>Individual</p>
-            </a>
-          </div>
-          <div cLassName="sb__fo0ter-links_div">
-            <h4>Resources</h4>
-            <a href="/resource">
-              <p>Resource center</p> 
-            </a> 
-            <a href="/resource">
-              <p>Testimonials</p> 
-            </a>
-            <a href="/resource">
-              <p>svt</p>
-            </a> 
-          </div>
-          <div cLassName="sb__footer-links_div">
-            <h4>Patners</h4>
-            <a href="/emloyer">
-              <p>swing tech</p>
-            </a>
-          </div>
-          <div className="sb__footer-links_div">
-            <h4>company</h4>
-            <a href="/about">
-              <p>about</p> 
-            </a> 
-            <a href="/press">
-              <p>press</p> 
-            </a>
-            <a href="/career">
-              <p>career</p>
-            </a> 
-            <a href="/contact">
-              <p>contact</p>
-            </a>
-          </div>
-          <div cLassName="sb__footer-links_div">
-            <h4>Coming soon on</h4> 
-            <div className="socialmedia">
-            <p><img src="" alt="" /></p>
-            <p><img src="" alt="" /></p>
-            <p><img src="" alt="" /></p>
-          </div>
-          </div> 
-
+    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>Get connected with us on social networks:</span>
         </div>
-        <hr></hr>
-        <div className="sb__footer-below">
-          <div className="sb__footer-copyright">
-            <p>
-              @{new Date().getFullYear()} dreamSync. All right reserved
-            </p>
-          </div>
-          <div className="sb__footer-below-links">
-            <a href= "/Terms & conditions" ><div><p>Terms & conditions</p></div></a>
-            <a href= "/privacy policies" ><div><p>privacy policies</p></div></a>
-            <a href= "/security" ><div><p>security</p></div></a>
-            <a href= "/cookie" ><div><p>cookie</p></div></a>
-            
 
-          </div>
+        <div>
+         <div className='me-4 text-reset'>
+          
         </div>
+          <a href='https://open.spotify.com/collection/tracks' className='me-4 text-reset'>
+          <FontAwesomeIcon icon={faEnvelope} style={{color: "#74a6fb",}} className="icon-hover"/>
+          </a>
+          <a href='your-valid-link' className='me-4 text-reset'>
+          <FontAwesomeIcon icon={faSquareInstagram} style={{color: "#74a6fb",}}/>
+          </a>
+          <a href='your-valid-link' className='me-4 text-reset'>
+          <FontAwesomeIcon icon={faTwitter}  style={{color: "#74a6fb",}}/>
+          </a>
+          <a href='your-valid-link' className='me-4 text-reset'>
+          <FontAwesomeIcon icon={faLinkedin}  style={{color: "#74a6fb",}}/>
+          </a>
+          <a href='your-valid-link' className='me-4 text-reset'>
+          <FontAwesomeIcon icon={faGithub}  style={{color: "#74a6fb",}}/>
+          </a>
+        </div>
+      </section>
+
+      <section className=''>
+        <MDBContainer className='text-center text-md-start mt-5'>
+          <MDBRow className='mt-3'>
+            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>
+                <MDBIcon icon="gem" className="me-3" />
+                Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+              </p>
+            </MDBCol>
+
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Angular
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  React
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Vue
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Laravel
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Pricing
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Settings
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Orders
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Help
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />
+                New York, NY 10012, US
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-3" />
+                info@example.com
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+              </p>
+              <p>
+                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+              </p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </section>
+
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+        © 2021 Copyright:
+        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+          MDBootstrap.com
+        </a>
       </div>
-    </div>
+    </MDBFooter>
+  
    </>    
   )
 }
