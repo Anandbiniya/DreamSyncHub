@@ -23,13 +23,19 @@ function App() {
   {/* <Hero/> */}
   
   <ChakraProvider>
+<<<<<<< HEAD
 <About/>
 <SimpleSlider/>
  <Card/>
+=======
+
+  <Card/>
+>>>>>>> ad9af4f (updated footer)
   </ChakraProvider>
   <Info/>
   
   <Ourteam/>
+<Core/>
   <Support/>
   <Footer/>
 
