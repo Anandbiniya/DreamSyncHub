@@ -31,12 +31,12 @@ function App() {
 
   <Card/>
 
+  <Support/>
   </ChakraProvider>
   <Info/>
   
   <Ourteam/>
 {/* <Core/> */}
-  <Support/>
   <Footer/>
 
    </>
