@@ -12,7 +12,7 @@ import Footer from "./components/Footer"
 import Core from './components/Core';
 import { ChakraProvider } from '@chakra-ui/react'
 import About from './components/About';
-// import CaptionCarousel from './components/NewCarosel';
+
 import SimpleSlider from './components/NewCarosel';
 
 
@@ -31,12 +31,12 @@ function App() {
 
   <Card/>
 
-  <Support/>
+
+  <Ourteam/>
   </ChakraProvider>
   <Info/>
   
-  <Ourteam/>
-{/* <Core/> */}
+
   <Footer/>
 
    </>
