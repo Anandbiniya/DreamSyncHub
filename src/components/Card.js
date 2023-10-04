@@ -2,10 +2,22 @@ import React from 'react';
 import './card.css';
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 import { Image, Stack, Heading, Text, Button, Divider, ButtonGroup} from '@chakra-ui/react';
+// import { Heading } from '@chakra-ui/react'
 function Card1() {
+  const headingStyle = {
+    textAlign: "center",  // Center align the text
+    fontSize: "2xl",      // Adjust the font size as needed
+    fontWeight: "bold",   // Apply bold font weight
+    color: "#007BFF",     // Change the text color to your preferred color
+    // Add any additional styles you want here
+  };
+
   return (
 
 <>
+<Heading as="h2" style={headingStyle}>
+      What we do
+    </Heading>
 <div className='d-flex justify-content-center'>
 
 <div className='row m-5 justify-content-evenly'>
