@@ -42,8 +42,8 @@ export default function CaptionCarousel() {
   // This can be static or loaded from a server
   const cards =  [
     {
-      title: 'Design Projects 1',
-      text: "The project board is an exclusive resource for contract work. It's perfect for freelancers, agencies, and moonlighters.",
+      title: 'DreamSyncHub',
+      text: " Bridging lives, fostering community, and empowering care leavers for a brighter future",
       image: 'https://images.unsplash.com/photo-1696009228202-70bd4c22f4b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2670&q=80',
     },
     // {

@@ -14,6 +14,14 @@ import { ChakraProvider } from '@chakra-ui/react'
 import About from './components/About';
 
 import SimpleSlider from './components/NewCarosel';
+import ReactDOM from 'react-dom'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
+import CaroselSimple from './components/Copycode';
+
+library.add(fab, faCheckSquare, faCoffee)
+
 
 
 function App() {
@@ -23,8 +31,8 @@ function App() {
   {/* <Hero/> */}
   
   <ChakraProvider>
-<SimpleSlider/>
-
+{/* <SimpleSlider/> */}
+<CaroselSimple/>
 <About/>
  <Card/>
 
