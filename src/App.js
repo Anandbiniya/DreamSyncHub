@@ -27,26 +27,15 @@ library.add(fab, faCheckSquare, faCoffee)
 function App() {
   return (
    <>
-  <Nav/>
-  {/* <Hero/> */}
-  
-  <ChakraProvider>
-{/* <SimpleSlider/> */}
-<CaroselSimple/>
-<About/>
- <Card/>
-
-
-  <Card/>
-
-
-  <Ourteam/>
-  </ChakraProvider>
-  <Info/>
-  
-
-  <Footer/>
-
+    <Nav/>
+    <ChakraProvider>
+      <CaroselSimple/>
+      <About/>
+      <Card/>
+      <Ourteam/>
+    </ChakraProvider>
+    <Info/>
+    <Footer/>
    </>
   );
 }
