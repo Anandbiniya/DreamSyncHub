@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './carousel.css'
 import {
   Box,
   IconButton,
