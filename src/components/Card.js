@@ -23,7 +23,7 @@ function Card1() {
     </Heading>
 <div className='d-flex justify-content-center'>
 
-<div className='row  justify-content-evenly'>
+<div className='row  justify-content-evenly w-100'>
 
 <Card maxW='xs' className='m-4'>
   <CardBody>

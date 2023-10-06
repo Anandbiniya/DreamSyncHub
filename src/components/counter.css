@@ -1,0 +1,21 @@
+.counting-animation {
+    font-size: 4rem;
+    
+    font-weight: bold;
+    color: #2273ff;
+
+    /* text-align: center; */
+    /* animation: counting 8s ease-in-out; Adjust animation duration as needed (e.g., 8s) */
+  }
+  .digits{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 5rem 3rem 7rem 3rem;
+  }
+  
+  .count-div{
+    padding-right: 4rem;
+  }
