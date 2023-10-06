@@ -37,7 +37,7 @@ function App() {
  <Card/>
 
 
-  <Card/>
+  {/* <Card/> */}
 
 
   <Ourteam/>
