@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import'./Nav.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -8,8 +8,42 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 function BasicExample() {
+
+  const [atBottom, setAtBottom] = useState(false);
+
+  const handleScroll = () => {
+    const windowHeight = window.innerHeight;
+    const scrollY = window.scrollY;
+    const bodyHeight = document.body.offsetHeight;
+
+    // Check if we're at the bottom of the page
+    if (windowHeight + scrollY >= bodyHeight) {
+      setAtBottom(false);
+    } else {
+      setAtBottom(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const navbarStyle = {
+    position: 'fixed',
+    top: '0',
+    left: '0',
+    width: '100%',
+    zIndex: '1000',
+    transition: 'transform 0.3s ease-in-out',
+    transform: atBottom ? 'translateY(0)' : 'translateY(-100%)',
+  };
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-tertiary" style={navbarStyle}>
       <Container>
         <Navbar.Brand href="#home" className='dream'>Dream<span className='logo-right'>Sync</span></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,19 +54,6 @@ function BasicExample() {
             <Nav.Link href="#link" className='nav_link'>Blogs</Nav.Link>
             <Nav.Link href="#link" className='nav_link'>Connection</Nav.Link>
             <Nav.Link href="#link" className='nav_link'>Join Us</Nav.Link>
-
-
-            {/* <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Blogs</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Connection
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">About us</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Join us
-              </NavDropdown.Item>
-            </NavDropdown> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
