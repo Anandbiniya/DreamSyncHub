@@ -1,3 +1,23 @@
 .navbar-collapse {
     flex-grow: 0 !important;
 }
+.nav_link{
+    border-radius: 3px;
+    padding-right: 10px !important;
+    margin: 5px;
+    color: #2273ff !important;
+}
+.nav_link:hover{
+    color: white !important;
+    background-color:  #2273ff !important;
+}
+.logo-right{
+    color: #2273ff;
+    
+}
+
+.dream{
+
+    font-size: x-large;
+        font-weight: bolder;
+}
