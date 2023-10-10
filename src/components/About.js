@@ -20,7 +20,7 @@ export default function About() {
         <Stack
           as={Box}
           textAlign={'center'}
-          spacing={{ base: 8, md: 14 }}
+          spacing={{ base: 8, md: 6 }}
           py={{ base: 20, md: 36 }}>
           <Heading
             fontWeight={600}
