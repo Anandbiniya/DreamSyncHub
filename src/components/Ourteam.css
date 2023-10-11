@@ -21,8 +21,8 @@ font-size:large;
     display: flex;
     justify-content: center;
 }
-.row{
-    padding-top: 2.5rem;
+.row,.tailbox{
+    padding-top: 5.5rem;
 }
 
 .innerdiv{
