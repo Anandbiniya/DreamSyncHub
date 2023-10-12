@@ -1,0 +1,88 @@
+/* QuoteComponent.css */
+.framer-1mga373 {
+    padding-top: 67px;
+    align-items: center;
+    background-color: #8c8c8c;;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    height: min-content;
+    justify-content: center;
+    min-height: 650px;
+    overflow: hidden;
+    padding: 100px;
+    position: relative;
+    width: 100%;
+    align-content: center;
+
+  }
+  .framer-GIW6V,.framer-14mdhsx {
+    --framer-link-text-color: #0099ff;
+    --framer-link-text-decoration: underline;
+    --framer-paragraph-spacing: 0px;
+    flex: 1 0 0px;
+    height: auto;
+    max-width: 1000px;
+    position: relative;
+    white-space: pre-wrap;
+    width: 1px;
+    word-break: break-word;
+    word-wrap: break-word;
+    z-index: 10;
+  }
+  .framer-14mdhsx {
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    transform: none;
+  }
+  
+  .framer-text {
+    /* Your styles for the text class here */
+    --font-selector: R0Y7RHluYVB1ZmYtNzAw;
+    --framer-font-family: "DynaPuff", sans-serif;
+    --framer-font-size: 48px;
+    --framer-font-weight: 700;
+    --framer-line-height: 1.3em;
+    --framer-text-alignment: center;
+    --framer-text-color: rgb(255, 255, 255);
+  }
+  
+  .framer-awvwiy {
+    /* Your styles for the framer-awvwiy class here */
+    flex: none;
+    inset: 0;
+    opacity: .3;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  /* Add any additional CSS styles as needed */
+  .hero_img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    --framer-aspect-ratio-supported: auto;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+  }
+  @media (min-width: 810px) and (max-width: 1199px){
+.framer-GIW6V, .framer-1mga373 {
+    height: 600px;
+    padding: 50px;}
+
+  }
+  @media (max-width: 809px){
+.framer-GIW6V, .framer-1mga373 {
+    gap: 40px;
+    min-height: unset;
+    padding: 100px 20px;
+}}

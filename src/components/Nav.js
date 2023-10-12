@@ -5,11 +5,12 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 
 
 function BasicExample() {
 
-  const [atBottom, setAtBottom] = useState(false);
+  const [atBottom, setAtBottom] = useState(true);
 
   const handleScroll = () => {
     const windowHeight = window.innerHeight;
@@ -49,11 +50,27 @@ function BasicExample() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav flex-grow-0 d-flex justify-content-end">
           <Nav className=" d-flex justify-content-end m-0 ">
+          <Link className='from-home' to={"/"}>
             <Nav.Link href="#home" className='nav_link'>Home</Nav.Link>
-            <Nav.Link href="#link" className='nav_link'>Events</Nav.Link>
+          </Link>
+          <Link className='from-home' to={"/event"}>
+            <Nav.Link href="/event" className='nav_link'>Events</Nav.Link>
+          </Link>
+          <Link className='from-home' to={"/blogs"}>
             <Nav.Link href="#link" className='nav_link'>Blogs</Nav.Link>
+          </Link>
+          <Link className='from-home' to={"/connect"}>
             <Nav.Link href="#link" className='nav_link'>Connection</Nav.Link>
-            <Nav.Link href="#link" className='nav_link'>Join Us</Nav.Link>
+          </Link>
+          <Link className='from-home' to={"/join"}>
+          <Nav.Link href="#link" className='nav_link'>Join Us</Nav.Link>
+          </Link>
+
+            
+           
+            
+            
+           
           </Nav>
         </Navbar.Collapse>
       </Container>

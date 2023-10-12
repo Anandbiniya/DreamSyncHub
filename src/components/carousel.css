@@ -9,3 +9,8 @@ font-size: 46px !important;
 .css-1pamqoo{
     font-size: 46px !important;
 }
+.tooltip-inner {
+    font-weight: bold;
+color: rgb(77, 77, 255);
+background-color:aliceblue;
+}
