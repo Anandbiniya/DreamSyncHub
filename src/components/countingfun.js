@@ -4,12 +4,13 @@ import './counter.css';
 function CountingAnimation({ endValue }) {
   const [count, setCount] = useState(0);
   const countingRef = useRef(null);
+  const intersectionObserverRef = useRef(null);
 
   useEffect(() => {
     const options = {
-      root: null, // Use the viewport as the root
-      rootMargin: '0px', // Margin around the root (no margin)
-      threshold: 0.5, // Intersection ratio to trigger the callback
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
     };
 
     const handleIntersection = (entries, observer) => {
@@ -22,11 +23,11 @@ function CountingAnimation({ endValue }) {
               setCount(currentCount);
               currentCount += 1;
             } else {
-              observer.unobserve(countingRef.current);
+              observer.unobserve(entry.target); // Use the target from the entry
             }
           };
 
-          const countingInterval = setInterval(incrementCount, 35); // Adjust the interval (e.g., 200ms for slower counting)
+          const countingInterval = setInterval(incrementCount, 35);
 
           return () => {
             clearInterval(countingInterval);
@@ -35,15 +36,15 @@ function CountingAnimation({ endValue }) {
       });
     };
 
-    const intersectionObserver = new IntersectionObserver(handleIntersection, options);
+    intersectionObserverRef.current = new IntersectionObserver(handleIntersection, options);
 
     if (countingRef.current) {
-      intersectionObserver.observe(countingRef.current);
+      intersectionObserverRef.current.observe(countingRef.current);
     }
 
     return () => {
-      if (countingRef.current) {
-        intersectionObserver.unobserve(countingRef.current);
+      if (countingRef.current && intersectionObserverRef.current) {
+        intersectionObserverRef.current.disconnect(); // Disconnect the observer
       }
     };
   }, [endValue]);

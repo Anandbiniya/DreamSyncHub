@@ -6,9 +6,7 @@ import {
   Box,
   IconButton,
   useBreakpointValue,
-  Stack,
-  Heading,
-  Text,
+ 
 } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
