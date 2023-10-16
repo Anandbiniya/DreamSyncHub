@@ -12,14 +12,14 @@ function Counter() {
       <div className='digits'>
       <OverlayTrigger placement="top" overlay={tooltip}>
         <div className='count-div'>
-         <CountingAnimation endValue={20} />
+         <CountingAnimation endValue={4} />
          <p>Clubs & Activities</p>
         </div>
         </OverlayTrigger>
         <OverlayTrigger placement="top" overlay={tooltip}>
         <div className='count-div'>
          <CountingAnimation endValue={15} />
-         <p>Creleaver helped</p>
+         <p>Careleaver helped</p>
         </div>
         </OverlayTrigger>
         <OverlayTrigger placement="top" overlay={tooltip}>

@@ -32,17 +32,17 @@ export default function SimpleSlider() {
 
   const teamMembers = [
     {
-      name: 'John Doe',
+      name: 'Vishwajeeth',
       occupation: 'Software Developer',
       image: member1,
     },
     {
-      name: 'Jane Smith',
+      name: 'Suraj Kumar',
       occupation: 'Designer',
       image: member1,
     },
     {
-      name: 'Alice Johnson',
+      name: 'Akash',
       occupation: 'Product Manager',
       image: member1,
     },
@@ -114,6 +114,7 @@ export default function SimpleSlider() {
                 <div className="card1 w-100 p-0 justify-content-center">
                   <div className="imgdiv p-3 innerdiv">
                     <img src={member.image} alt={member.name} className="rounded-circle cirularimage" />
+                    <h4>{member.name}</h4>
                     <p className="occupation">{member.occupation}</p>
                     <div className="d-flex justify-content-center">
                       <Button variant="outline-primary profile_button">View profile</Button>
