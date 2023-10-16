@@ -5,7 +5,7 @@ import Card from "./components/Card";
 
 import Info from "./components/Info"
 import Ourteam from "./components/Ourteam"
-import Footer from "./components/Footer"
+
 import { ChakraProvider } from '@chakra-ui/react'
 import About from './components/About';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -26,7 +26,7 @@ function home() {
     </ChakraProvider>
     <Counter/>
     <Info/>
-    <Footer/>
+
 </>
   )
 }
