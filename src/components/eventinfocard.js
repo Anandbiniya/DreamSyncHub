@@ -49,7 +49,9 @@ function EventInfoCard() {
                             <div class=" popup-month">12</div>
                             <div class=" popup-time">2</div>
                             <div class=" popup-venue ">venda,jhsdfbljhadbfk adfuag ue</div>
+                            <div className='joinus-btn'>                                
                             <a href="https://chat.whatsapp.com/F16qdcRPSR8EevxlT75vYS" target="_blank" class="btn btn-primary">Join</a>
+                            </div>
                             </div>
                         </div>
                         <div class="col-md-8 d-flex flex-column align-self-center p-2">

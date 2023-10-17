@@ -89,9 +89,23 @@ justify-content: center;
 padding: 5px;
 align-items: center;
 }
+.joinus-btn{
+
+    align-items: center;
+        display: flex;
+        justify-content: center;
+}
 
 .modal{
            --bs-modal-width: 700px;
+}
+@media (max-width: 809px){
+    .popup{
+        
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
 }
 @media (min-width: 810px) and (max-width: 1199px) {
     .upcoming-event {
