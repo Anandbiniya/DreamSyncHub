@@ -1,0 +1,43 @@
+.e-head-div{
+
+    position: absolute;
+    border-radius: inherit;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.e-head-img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center;
+    object-fit: cover;
+    image-rendering: auto;
+}
+.e-head-up{
+    border-radius: 40px;
+    width: 490px;
+    flex: none;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+
+    will-change: var(--framer-will-change-override, transform);
+}
+@media (min-width: 810px) and (max-width: 1300px) {
+    .e-head-up{
+        width: 290px;
+        height: 200px;       
+    }
+}
+@media (max-width: 809px){
+    .aeventhead{
+        align-items: center;
+        
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+}
