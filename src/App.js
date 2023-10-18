@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
+import AboutEvent from './AboutEvent';
 import Home from './Home';
 import Event from './Event';
 import "slick-carousel/slick/slick.css";
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/event" component={Event} />
+          <Route exact path="/about-event" component={AboutEvent} />
         </Switch>
         <Footer/>
       </Router>

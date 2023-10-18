@@ -103,10 +103,9 @@ function Card1() {
   </CardFooter>
 </Card>
 </div>
-
 </div>
 <div className='d-flex justify-content-center'>
-<div className='row justify-content-evenly pt-0'>
+<div className='row m-4 mt-0 mb-0 pt-0 justify-content-evenly'>
 <Card maxW='xs' className='m-4'>
   <CardBody>
     <Image
@@ -184,8 +183,8 @@ function Card1() {
   </CardFooter>
 </Card>
 </div>
-
 </div>
+
     </div>
 </div>
 

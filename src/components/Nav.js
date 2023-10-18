@@ -65,12 +65,9 @@ function BasicExample() {
           <Link className='from-home' to={"/join"}>
           <Nav.Link href="#link" className='nav_link'>Join Us</Nav.Link>
           </Link>
-
-            
-           
-            
-            
-           
+          <Link className='from-home' to={"/about-event"}>
+          <Nav.Link href="#link" className='nav_link'>Event Info</Nav.Link>
+          </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
